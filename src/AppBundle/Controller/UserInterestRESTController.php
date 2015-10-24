@@ -60,8 +60,10 @@ class UserInterestRESTController extends VoryxController
             $filters = !is_null($paramFetcher->get('filters')) ? $paramFetcher->get('filters') : array();
 
             $em = $this->getDoctrine()->getManager();
-            $entities = $em->getRepository('AppBundle:UserInterest')->findBy($filters, $order_by, $limit, $offset);
-            if ($entities) {
+
+		    $entities = $em->getRepository('AppBundle:UserInterest')->findBy($filters, $order_by, $limit, $offset);
+
+	        if ($entities) {
                 return $entities;
             }
 

@@ -19,9 +19,9 @@ class InterestsService
 	}
 
 	/**
-	 * Attach user ratings to the content list passed in parameters
+	 * Attach interests to a list of users
 	 *
-	 * @param $contents
+	 * @param $users
 	 * @return mixed
 	 */
 	public function attachInterests($users)
@@ -39,6 +39,28 @@ class InterestsService
 		return $users;
 	}
 
+	/**
+	 * Attach user ratings to the content list passed in parameters
+	 *
+	 * @param $interests
+	 * @return mixed
+	 */
+	public function getUsersFromInterests($interests)
+	{
+		if ($interests == array()) {
+			return array();
+		}
 
+		$userInterests = $this->em->getRepository('AppBundle:UserInterest')->findBy(array('interest' => $interests));
+
+		$users = array();
+		foreach ($userInterests as $userInterest) {
+			if (!in_array($userInterest->getUser(), $users)) {
+				$users[] = $userInterest->getUser();
+			}
+		}
+
+		return $users;
+	}
 
 } 

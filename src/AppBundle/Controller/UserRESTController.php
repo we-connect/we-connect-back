@@ -49,7 +49,7 @@ class UserRESTController extends VoryxController
      * @QueryParam(name="offset", requirements="\d+", nullable=true, description="Offset from which to start listing notes.")
      * @QueryParam(name="limit", requirements="\d+", default="20", description="How many notes to return.")
      * @QueryParam(name="order_by", nullable=true, array=true, description="Order by fields. Must be an array ie. &order_by[name]=ASC&order_by[description]=DESC")
-     * @QueryParam(name="filters", nullable=true, array=true, description="Filter by fields. Must be an array ie. &filters[id]=3")
+     * @QueryParam(name="filters", nullable=true, array=true, description="Filter by fields. Must be an array ie. &filters[id]=3, or filters[interests][]=2&filters[interests][]=2")
      * @QueryParam(name="infos", nullable=true, array=true, description="Add some additional infos. Must be an array ie. &infos[interests]")
      */
     public function cgetAction(ParamFetcherInterface $paramFetcher)
@@ -67,7 +67,15 @@ class UserRESTController extends VoryxController
 	        }
 
             $em = $this->getDoctrine()->getManager();
-            $entities = $em->getRepository('AppBundle:User')->findBy($filters, $order_by, $limit, $offset);
+
+	        if (array_key_exists('interests', $filters)) {
+		        $interests = $filters['interests'];
+		        unset($filters['interests']);
+
+		        $entities = $interestService->getUsersFromInterests($interests);
+	        } else {
+                $entities = $em->getRepository('AppBundle:User')->findBy($filters, $order_by, $limit, $offset);
+	        }
             if ($entities) {
 	            if (array_key_exists('interests', $infos)) {
 			        $entities = $interestService->attachInterests($entities);
