@@ -21,12 +21,12 @@ class UserInterest
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="date", type="string", length=255)
-     */
-    private $date;
+	/**
+	 * @var \DateTime
+	 *
+	 * @ORM\Column(name="date", type="datetime")
+	 */
+	private $date;
 
 	/**
 	 * @var User
@@ -64,7 +64,7 @@ class UserInterest
 	/**
      * Set date
      *
-     * @param string $date
+     * @param \DateTime $date
      *
      * @return UserInterest
      */
@@ -78,7 +78,7 @@ class UserInterest
 	/**
      * Get date
      *
-     * @return string
+     * @return \DateTime
      */
     public function getDate()
     {

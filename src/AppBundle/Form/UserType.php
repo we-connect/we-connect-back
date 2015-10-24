@@ -20,8 +20,11 @@ class UserType extends AbstractType
             ->add('image')
             ->add('firstName')
             ->add('lastName')
-            ->add('dateRegister')
             ->add('locale')
+
+		    ->add('username')
+		    ->add('password')
+		    ->add('email');
         ;
     }
     

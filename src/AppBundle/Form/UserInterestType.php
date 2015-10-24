@@ -15,9 +15,8 @@ class UserInterestType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('date')
             ->add('user')
-            ->add('issue')
+            ->add('interest')
         ;
     }
     
