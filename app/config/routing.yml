@@ -1,0 +1,18 @@
+app_interest_api:
+    resource: "@AppBundle/Controller/InterestRESTController.php"
+    type:   rest
+    prefix:   /api
+
+app_user_interest_api:
+    resource: "@AppBundle/Controller/UserInterestRESTController.php"
+    type:   rest
+    prefix:   /api
+
+app_user_api:
+    resource: "@AppBundle/Controller/UserRESTController.php"
+    type:   rest
+    prefix:   /api
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
