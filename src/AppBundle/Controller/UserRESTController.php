@@ -48,7 +48,7 @@ class UserRESTController extends VoryxController
      *
      * @QueryParam(name="offset", requirements="\d+", nullable=true, description="Offset from which to start listing notes.")
      * @QueryParam(name="limit", requirements="\d+", default="20", description="How many notes to return.")
-     * @QueryParam(name="order_by", nullable=true, array=true, description="Order by fields. Must be an array ie. &order_by[name]=ASC&order_by[description]=DESC")
+     * @QueryParam(name="order_by", nullable=true, array=true, description="Order by fields. Must be an array ie. &order_by[name]=ASC&order_by[description]=DESC, or order_by[random]=*seed* (0=true random)")
      * @QueryParam(name="filters", nullable=true, array=true, description="Filter by fields. Must be an array ie. &filters[id]=3, or filters[interests][]=2&filters[interests][]=2")
      * @QueryParam(name="infos", nullable=true, array=true, description="Add some additional infos. Must be an array ie. &infos[interests]")
      */
@@ -59,6 +59,12 @@ class UserRESTController extends VoryxController
 	        $offset = $paramFetcher->get('offset');
             $limit = $paramFetcher->get('limit');
             $order_by = $paramFetcher->get('order_by');
+	        $seed = null;
+	        if (array_key_exists('random', $order_by)) {
+		        $seed = $order_by['random'];
+		        unset($order_by['random']);
+	        }
+
             $filters = !is_null($paramFetcher->get('filters')) ? $paramFetcher->get('filters') : array();
 
 	        $infos = $paramFetcher->get('infos');
@@ -81,6 +87,23 @@ class UserRESTController extends VoryxController
 			        $entities = $interestService->attachInterests($entities);
 	            }
 
+	            if ($seed != null) {
+		            if ($seed == 0) {
+			            $seed = rand(0, 1000);
+		            }
+
+		            //Everyday I'm shuffelin'
+		            @mt_srand($seed);
+		            $entities = array_values($entities);
+		            for ($i = count($entities) - 1; $i > 0; $i--)
+		            {
+			            $j = @mt_rand(0, $i);
+			            $tmp = $entities[$i];
+			            $entities[$i] = $entities[$j];
+			            $entities[$j] = $tmp;
+		            }
+	            }
+
                 return $entities;
             }
 
@@ -89,6 +112,19 @@ class UserRESTController extends VoryxController
             return FOSView::create($e->getMessage(), Codes::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
+
+	/**
+	 * Randomize array with seed
+	 *
+	 * @param $items
+	 * @param $seed
+	 */
+	private function fisherYatesShuffle(&$items, $seed)
+	{
+
+	}
+
+
     /**
      * Create a User entity.
      *
