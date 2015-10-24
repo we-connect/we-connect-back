@@ -7,7 +7,7 @@ parameters:
     database_port: null
     database_name: weconnect
     database_user: weconnect
-    database_password: WWW3LC0ME
+    database_password: WWW3LC0M3
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
