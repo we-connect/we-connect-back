@@ -75,6 +75,27 @@ class User extends BaseUser
 	private $locale;
 
 	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="gender", type="string", length=50, nullable=true)
+	 */
+	private $gender;
+
+	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="type", type="string", length=50, nullable=true)
+	 */
+	private $type;
+
+	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="meeting_pref", type="string", length=50, nullable=true)
+	 */
+	private $meetingPref;
+
+	/**
 	 * @var Interest $interests
 	 */
 	private $interests;
@@ -255,6 +276,75 @@ class User extends BaseUser
 	public function getLocale()
 	{
 		return $this->locale;
+	}
+
+	/**
+	 * Set gender
+	 *
+	 * @param string $gender
+	 * @return User
+	 */
+	public function setGender($gender)
+	{
+		$this->gender = $gender;
+
+		return $this;
+	}
+
+	/**
+	 * Get gender
+	 *
+	 * @return string
+	 */
+	public function getGender()
+	{
+		return $this->gender;
+	}
+
+	/**
+	 * Set type
+	 *
+	 * @param string $type
+	 * @return User
+	 */
+	public function setType($type)
+	{
+		$this->type = $type;
+
+		return $this;
+	}
+
+	/**
+	 * Get type
+	 *
+	 * @return string
+	 */
+	public function getType()
+	{
+		return $this->type;
+	}
+
+	/**
+	 * Set meetingPref
+	 *
+	 * @param string $meetingPref
+	 * @return User
+	 */
+	public function setMeetingPref($meetingPref)
+	{
+		$this->meetingPref = $meetingPref;
+
+		return $this;
+	}
+
+	/**
+	 * Get meetingPref
+	 *
+	 * @return string
+	 */
+	public function getMeetingPref()
+	{
+		return $this->meetingPref;
 	}
 
 	/**

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="297e5da3-5354-4634-9cfb-afcdc9779bd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="we-connect-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,20 +27,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserRESTController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserRESTController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="203" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.51903117" vertical-offset="330" max-vertical-offset="3798">
+            <state line="52" column="139" selection-start="1843" selection-end="1963" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="4068">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterestsService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <file leaf-file-name="UserInterestRESTController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserInterestRESTController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="-23.148148" vertical-offset="203" max-vertical-offset="1278">
+            <state line="62" column="0" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3114">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterestRESTController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InterestRESTController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.0" vertical-offset="18" max-vertical-offset="2808">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="7" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.1573604" vertical-offset="1275" max-vertical-offset="7200">
+              <folding>
+                <element signature="e#36#78#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +68,7 @@
       <file leaf-file-name="UserType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="936">
+            <state line="25" column="30" selection-start="672" selection-end="672" vertical-scroll-proportion="-12.666667" vertical-offset="72" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -69,26 +91,26 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Interest.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/web/app_dev.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/UserInterestType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/UserInterest.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/UserInterestRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserInterestRESTController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -116,6 +138,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,7 +325,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,23 +374,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2565737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25099602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -394,11 +416,197 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="29" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2304">
+        <state line="20" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4068">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="5580">
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="4068">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="5580">
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4068">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="5580">
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="203" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="29" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
@@ -410,14 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InterestRESTController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2808" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php">
@@ -442,108 +643,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="29" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InterestRESTController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="82.85185" vertical-offset="2255" max-vertical-offset="2808">
-          <folding />
-        </state>
+        <state line="93" column="29" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app_dev.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="885" selection-end="885" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="648">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="885" selection-end="885" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="648" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Interest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="481" selection-end="481" vertical-scroll-proportion="-8.666667" vertical-offset="270" max-vertical-offset="2412">
-          <folding />
-        </state>
+        <state line="28" column="18" selection-start="481" selection-end="481" vertical-scroll-proportion="-8.666667" vertical-offset="270" max-vertical-offset="2412" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/InterestType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserInterestType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="477" selection-end="477" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1150" selection-end="1261" vertical-scroll-proportion="-4.5555553" vertical-offset="993" max-vertical-offset="5580">
-          <folding>
-            <element signature="e#36#78#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="18" column="27" selection-start="477" selection-end="477" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/UserInterest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="24" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-13.888889" vertical-offset="1065" max-vertical-offset="2556">
-          <folding />
-        </state>
+        <state line="80" column="24" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-13.888889" vertical-offset="1065" max-vertical-offset="2556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/UserInterestRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.2862191" vertical-offset="0" max-vertical-offset="566">
+        <state line="9" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.2862191" vertical-offset="0" max-vertical-offset="566" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="0.2214533" vertical-offset="700" max-vertical-offset="1278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.3883495" vertical-offset="0" max-vertical-offset="927" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="139" selection-start="1843" selection-end="1963" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="4068">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserInterestRESTController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2209" selection-end="2209" vertical-scroll-proportion="-4.245614" vertical-offset="604" max-vertical-offset="2844">
+        <state line="62" column="0" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InterestRESTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="2808">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="936">
+        <state line="25" column="30" selection-start="672" selection-end="672" vertical-scroll-proportion="-12.666667" vertical-offset="72" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/InterestsService.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="7" selection-start="787" selection-end="787" vertical-scroll-proportion="-23.148148" vertical-offset="203" max-vertical-offset="1278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="203" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.51903117" vertical-offset="330" max-vertical-offset="3798">
-          <folding />
+        <state line="76" column="7" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.1573604" vertical-offset="1275" max-vertical-offset="7200">
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
