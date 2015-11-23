@@ -42,6 +42,13 @@ class Interest
      */
     private $status;
 
+	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="category", type="string", length=100, nullable=true)
+	 */
+	private $category;
+
 
     /**
      * Get id
@@ -124,5 +131,29 @@ class Interest
     {
         return $this->status;
     }
+
+	/**
+	 * Set category
+	 *
+	 * @param string $category
+	 *
+	 * @return Interest
+	 */
+	public function setCategory($category)
+	{
+		$this->category = $category;
+
+		return $this;
+	}
+
+	/**
+	 * Get category
+	 *
+	 * @return string
+	 */
+	public function getCategory()
+	{
+		return $this->category;
+	}
 }
 

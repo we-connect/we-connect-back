@@ -18,6 +18,7 @@ class InterestType extends AbstractType
             ->add('name')
             ->add('image')
             ->add('status')
+		    ->add('category')
         ;
     }
     
